@@ -15,7 +15,6 @@ def popisek (radek):
     food_note = str(radek.food_note)
     description = str(radek.description)
     popisek = title + " preferuje následující typ stravy:" + food + ". " + "Konkrétně ocení když mu do misky přistanou " + food_note + ". " + "\n" + "A jak toto zvíře vypadá? " + description
-
     return popisek
 
 zvirata["Novy_popisek"]=zvirata.apply(popisek, axis = 1)
