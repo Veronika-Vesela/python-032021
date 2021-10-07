@@ -1,5 +1,6 @@
 import requests
 import pandas
+import numpy
 
 #r = requests.get("https://raw.githubusercontent.com/pesikj/python-032021/7cdd66d0313f60fe177fbdbd7f3b87b079cacd67/01_pandas/01/ukol/london_merged.csv?token=AVVCVO5LJYK5HYJQZKR5ASLBJGTJ4")
 #open("london_merged.csv", 'wb').write(r.content)
@@ -23,5 +24,6 @@ kola=pandas.read_csv("london_merged.csv")
 kola["timestamp"]=pandas.to_datetime(kola["timestamp"])
 kola["year"]=kola["timestamp"].dt.year
 
-pivot=pandas.pivot_table(kola, index="weather_code", columns="year", aggfunc=len)
+pivot=pandas.pivot_table(kola, index="weather_code", columns="year", values = "cnt", aggfunc=numpy.sum)
 print(pivot)
+
