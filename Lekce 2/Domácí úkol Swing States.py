@@ -18,7 +18,7 @@ presidenti_vitezove=presidenti_sorted[presidenti_sorted["rank"]==1]
 
 
 # Pomocí metody shift() přidej nový sloupec, abys v jednotlivých řádcích měl(a) po sobě vítězné strany ve dvou po sobě jdoucích letech.
-presidenti_vitezove=presidenti_vitezove.sort_values(by=["state"])
+presidenti_vitezove=presidenti_vitezove.sort_values(by=["state", "year"])
 presidenti_vitezove["party_last_year"]=presidenti_vitezove.groupby(["state"])["party_simplified"].shift(-1)
 presidenti_vitezove.to_csv("presidenti_vitezove.csv")
 
