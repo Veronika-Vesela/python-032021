@@ -49,8 +49,8 @@ plt.show()
 
 # Čím je způsobený prudký nárůst těžby jehličnatých stromů cca od roku 2015, který je viditelný v grafu z bodu (2.)?
 
-# x Z grafu je patrné, že se jedná o hmyzovou říčinu. Na internetu lze velmi snadno dohledat, že právě v roce 2015 přišla druhá kůrovnovcová
-# vlna na Severní Moravu, kde kůrovec napadal hlavně suchem oslabené smrky
+# Z grafu je patrné, že se jedná o hmyzovou říčinu. Na internetu lze velmi snadno dohledat, že právě v roce 2015 přišla druhá kůrovnovcová
+# vlna na Severní Moravu, kde kůrovec napadal hlavně suchem oslabené smrky.
 
 # Kolem roku 2007 vidíme v obou grafech krátkodobý nárůst těžby. Čím byl způsobený (můžeš zkusit dohledat konkrétní událost)?
-# Jednalo se o živelnou pohromu - Orkán Kyrill
+# Jednalo se o živelnou pohromu - Orkán Kyrill.
