@@ -15,8 +15,8 @@ zvirata=zvirata.set_index("id")
 
 def check_url (radek):
     if isinstance(radek.image_src, str):
-        if radek.image_src.startswith("https://zoopraha.cz/images/"):
-            if (radek.image_src.endswith("jpg")):
+        if (radek.image_src.lower()).startswith("https://zoopraha.cz/images/"):
+            if (radek.image_src.lower()).endswith("jpg"):
                 return "OK"
             else:
                 return "chyba"
@@ -33,6 +33,7 @@ for radek in zvirata.itertuples():
         seznam_chybna_zvirata.append(radek.title)
 
 print(seznam_chybna_zvirata)
+print(len(seznam_chybna_zvirata))
 
 
 # #vypsání pomocí pomocného sloupečku - není ideální
@@ -43,7 +44,8 @@ print(seznam_chybna_zvirata)
 # zvirata["kontrola_obrazek"]=seznam_kontrol_obrazek
 #
 # zvirata_chybna=zvirata[zvirata["kontrola_obrazek"]=="chyba"]
-# print(zvirata_chybna["title"])
+# print(len(zvirata_chybna["title"]))
+# zvirata_chybna.to_csv("zvirata_chybna.csv")
 
 
 
